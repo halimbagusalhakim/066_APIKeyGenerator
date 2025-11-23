@@ -1,4 +1,4 @@
-// File: controllers/adminController.js
+
 
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
