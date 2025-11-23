@@ -105,6 +105,24 @@
             text-align: left;
             min-height: 20px;
         }
+
+        /* ===== BACK BUTTON ===== */
+        #backButton {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.12);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #backButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 
@@ -123,6 +141,7 @@
         </form>
 
         <pre id="messageOut"></pre>
+        <button type="button" id="backButton" onclick="window.location.href='/'">Kembali ke Generator</button>
     </div>
 
     <script src="/public/login.js"></script>
