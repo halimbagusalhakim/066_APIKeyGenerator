@@ -69,8 +69,6 @@ document.getElementById("logout").addEventListener("click", () => {
 // --- FUNGSI RENDERING ---
 
 /**
- * Merender daftar API Keys di Admin Dashboard.
- * Kita menggunakan data dari /api/admin/apikeys yang berisi list dokumen ApiKey.
  * @param {Array<Object>} apiKeys - Daftar dokumen API Key dari backend.
  */
 function renderApiKeysTable(apiKeys) {
@@ -142,5 +140,3 @@ async function handleDeleteKey(event) {
     }
 }
 
-// Panggil loadUsers saat halaman dimuat (opsional, tergantung preferensi UX)
-// document.getElementById("loadUsers").click();
