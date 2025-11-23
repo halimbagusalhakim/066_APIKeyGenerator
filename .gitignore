@@ -1,0 +1,27 @@
+# Dependencies
+/node_modules
+
+# Logs
+npm-debug.log*
+.eslintcache
+/logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+
+# Build outputs
+/dist
+/build
+/out
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Database (Jika Anda menggunakan file database lokal seperti SQLite)
+# *.sqlite
+# *.db
