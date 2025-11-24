@@ -43,8 +43,8 @@ async function start() {
     // 2. Cek dan Buat Admin Default (Jika Belum Ada)
     const adminCount = await Admin.count();
     if (adminCount === 0) {
-      const defaultAdminUser = process.env.DEFAULT_ADMIN_USER || 'admin';
-      const defaultAdminPass = process.env.DEFAULT_ADMIN_PASS || 'admin123';
+      const defaultAdminUser = process.env.DEFAULT_ADMIN_USER;
+      const defaultAdminPass = process.env.DEFAULT_ADMIN_PASS;
 
       // Hash password sebelum disimpan (Wajib untuk Login yang Aman)
       const hashedPass = await bcrypt.hash(defaultAdminPass, 10);
